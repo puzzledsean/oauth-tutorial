@@ -1,3 +1,22 @@
+# OAuth
+
+Following video tutorials from: <br>
+https://www.udacity.com/course/authentication-authorization-oauth--ud330
+
+This repo is based on a clone of their starter code with the proper vagrant file: <br>
+https://github.com/udacity/OAuth2.0
+
+### Topics Covered
+- [x] Lesson 1: Authentication vs Authorization
+  - Differences between Authentication vs Authorization
+  - Pros and cons of using third party authentication (i.e. G+, Facebook, etc)
+- [ ] Lesson 2: Creating a Google Sign In
+  
+
+<hr>
+
+[Original Description]
+
 # OAuth2.0
 Starter Code for Auth&amp;Auth course
 # Installing the Vagrant VM for ud330 - Authentication & Authorization
