@@ -1,5 +1,5 @@
 .DS_Store
-client_secrets.json
+*client_secrets.json
 .vagrant/
 
 # Byte-compiled / optimized / DLL files
