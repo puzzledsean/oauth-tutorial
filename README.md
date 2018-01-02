@@ -10,8 +10,20 @@ https://github.com/udacity/OAuth2.0
 - [x] Lesson 1: Authentication vs Authorization
   - Differences between Authentication vs Authorization
   - Pros and cons of using third party authentication (i.e. G+, Facebook, etc)
-- [ ] Lesson 2: Creating a Google Sign In
-  
+- [x] Lesson 2: Creating a Google Sign In (Hybrid auth flow)
+  1. Generate anti forgery session states from random alphanumerical characters
+  2. Use Google Developer API to get client secrets for a G+ app 
+      1. note for future reference: if getting 401 error "Error: Missing property "redirect_uris" in a client type of "web".", go to: https://github.com/google/oauth2client/issues/16
+  3. Create basic login page with G+ sign in button
+  4. Add client/frontend signin logic
+      1. Client authenticates and queries G+ API
+      2. G+ API sends one-time code back to Client
+      3. Client POSTs one-time code to /gconnect server endpoint
+  5. Add server/backend signin logic
+      1. Server uses one-time code to query G+ API
+      2. Upon success, G+ API sends access token to server for getting basic user info (email, name, pic, etc)
+  6. Logging out with G+ revoke endpoint
+  7. Basic page protection (i.e. user needs to be logged in to access certain pages)
 
 <hr>
 
