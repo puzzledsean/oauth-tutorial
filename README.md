@@ -24,6 +24,10 @@ https://github.com/udacity/OAuth2.0
       2. Upon success, G+ API sends access token to server for getting basic user info (email, name, pic, etc)
   6. Logging out with G+ revoke endpoint
   7. Basic page protection (i.e. user needs to be logged in to access certain pages)
+- [x] Lesson 3: Local Permission System
+  1. Add a User model to database
+    1. Create a user_id column in Restaurant/Menu table to associate each restaurant/menu with its creator
+  2. Add logic to protect pages so that only the authorized user can access it
 
 <hr>
 
